@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TimerActivity"
+    android:id="@+id/relLayTimer">
+
+    <TextView
+        android:id="@+id/txtPhase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+
+        android:text="Exercise"
+        />
+
+    <TextView
+        android:id="@+id/txtPauseTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPhase"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+
+        android:text="Total time: 0 S"
+        />
+
+    <TextView
+        android:id="@+id/txtExerciseTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPauseTime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+
+        android:text="0 S"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtExerciseTime"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        />
+
+    <TextView
+        android:id="@+id/txtRepetitions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+
+        android:text="Repetitions: 0"
+        />
+
+    <LinearLayout
+        android:id="@+id/checkConteiner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtRepetitions"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+        <CheckBox
+            android:id="@+id/checkBoxVolume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volume"
+            android:layout_centerHorizontal="true"
+            android:checked="true"
+            android:buttonTint="@android:color/secondary_text_dark"
+            />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+        <CheckBox
+            android:id="@+id/checkBoxVibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vibrate"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:buttonTint="@android:color/secondary_text_dark"
+            />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkBoxDoInBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkConteiner"
+        android:layout_weight="1"
+        android:text="Do in background"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:checked="false"
+        android:buttonTint="@android:color/secondary_text_dark"
+        />
+
+    <LinearLayout
+        android:id="@+id/buttonConteiner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBoxDoInBackground"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnStopTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+
+            android:text="Stop"
+            />
+
+        <Button
+            android:id="@+id/btnResumeTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:enabled="false"
+
+            android:text="Resume" />
+
+        <Button
+            android:id="@+id/btnRestartTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+
+            android:text="Restart" />
+    </LinearLayout>
+</RelativeLayout>
