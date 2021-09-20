@@ -5,9 +5,9 @@ This is a simple application that is used to keep track execution and pause time
 ## 🎞️ Snapshots
 
 <p align="center">
-  <img src="./images/menu.jpg" width="200">
-  <img src="./images/exercise.jpg" width="200">
-  <img src="./images/pause.jpg" width="200">
+  <img src="./READMEimages/menu.jpg" width="200">
+  <img src="./READMEimages/exercise.jpg" width="200">
+  <img src="./READMEimages/pause.jpg" width="200">
 </p>
 
 ## 🙋 Info
