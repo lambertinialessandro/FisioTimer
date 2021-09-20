@@ -2,7 +2,7 @@
 
 This is a simple application that is used to keep track execution and pause time to execute same exercise for Physiotherapy or Work out.
 
-## 📷 Images
+## 🎞️ Snapshots
 
 <p align="center">
   <img src="./images/menu.jpg" width="200">
